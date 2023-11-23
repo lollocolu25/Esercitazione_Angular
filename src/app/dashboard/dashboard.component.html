@@ -1,0 +1,8 @@
+<h2>Ecco la lista delle banche</h2>
+<div class="banks-menu">
+  <a *ngFor="let hero of Banks"
+    routerLink="detail/{{hero.id}}">
+    {{hero.nome}}
+  </a>
+</div>
+

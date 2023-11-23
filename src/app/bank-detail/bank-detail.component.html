@@ -1,0 +1,21 @@
+
+<h2>{{Bank.nome | uppercase}} Details</h2>
+  <div><span>id: </span>{{Bank.id}}</div>
+  <div>
+    <label for="Bank-nome">Bank name: </label>
+    <input id="Bank-nome" [(ngModel)]="Bank.nome" placeholder="Bank name"/>
+    <br>
+    
+    <br>
+    <!-- <label for="Bank-borders">stati confinanti del {{Bank.name.official}}</label> -->
+    <br>
+    <!-- <div>
+      <li *ngFor="let border of Bank.borders">
+        <a routerLink="/detail/{{border}}">
+          <span class="badge"></span> {{border}}
+        </a>
+    </div> -->
+    
+    
+  </div>
+  <button type="button" (click)="goBack()">go back</button>
